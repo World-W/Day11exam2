@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.bawei.shiwenhao.CucesToact
+        android:layout_width="match_parent"
+        android:id="@+id/ct"
+        android:layout_height="40dp">
+    </com.bawei.shiwenhao.CucesToact>
+    <com.stx.xhb.xbanner.XBanner
+        android:layout_width="match_parent"
+        android:id="@+id/xbn"
+        android:layout_height="200dp">
+    </com.stx.xhb.xbanner.XBanner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="热销p新品"
+        android:background="@mipmap/bj"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/listView"
+        android:layout_height="0dp">
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="魔力时尚"
+        android:gravity="center"
+        android:background="@mipmap/bj"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/listView1"
+        android:layout_height="0dp">
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="品质生活"
+        android:gravity="center"
+        android:background="@mipmap/bj"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:layout_width="@dimen/dp299"
+        android:layout_weight="1"
+        android:numColumns="2"
+        android:id="@+id/listView2"
+        android:layout_height="@dimen/dp100">
+    </GridView>
+
+</LinearLayout>
